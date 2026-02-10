@@ -29,9 +29,9 @@ Data：用於存放資料的緩衝區。
 
 關鍵用法 (技巧)：
 
-1.取得資料大小 (探路)：傳入 Data = NULL 且 DataSize = 0。若變數存在，會回傳 EFI_BUFFER_TOO_SMALL，並將實際大小填入 DataSize。
+(1)取得資料大小 (探路)：傳入 Data = NULL 且 DataSize = 0。若變數存在，會回傳 EFI_BUFFER_TOO_SMALL，並將實際大小填入 DataSize。
 
-2.讀取資料：根據取得的大小 AllocatePool 分配記憶體，再呼叫一次 GetVariable 讀取內容。
+(2)讀取資料：根據取得的大小 AllocatePool 分配記憶體，再呼叫一次 GetVariable 讀取內容。
 
 程式碼範例：
 
@@ -103,9 +103,9 @@ DataSize：資料大小。設為 0 代表刪除變數。
 
 關鍵用法 (技巧)：
 
-1.刪除變數：SetVariable(Name, Guid, 0, 0, NULL)。
+(1)刪除變數：SetVariable(Name, Guid, 0, 0, NULL)。
 
-2.建立變數：必須指定正確的 Attributes，否則可能建立失敗或無法保存。
+(2)建立變數：必須指定正確的 Attributes，否則可能建立失敗或無法保存。
 
 2. 輸出入服務 (UEFI Boot Services & Console)
 
