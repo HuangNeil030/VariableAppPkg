@@ -1,0 +1,11 @@
+## @file
+#  VariableAppPkg Declaration file
+#
+##
+
+[Defines]
+  DEC_SPECIFICATION              = 0x00010005
+  PACKAGE_NAME                   = VariableAppPkg
+  PACKAGE_GUID                   = 88a5f37d-8339-4344-b799-d2a4485fa111
+  PACKAGE_VERSION                = 1.0
+
